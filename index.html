@@ -2,6 +2,7 @@ Hello world
 <div>
     <p>Modal</p>
     <p>Footer</p>
+    <p>{{ application.name }}</p>
 </div>
 <footer
     class="container d-flex flex-column flex-sm-row justify-content-center justify-content-sm-between align-items-end align-items-sm-center pe-4 pe-sm-2 footer">
@@ -24,8 +25,11 @@ Hello world
         <a id="tycid" href="https://kueski.com/terminosdeuso" target="_blank" class="footer-text ms-4">Términos</a>
         <a id="privacyid" href="https://kueski.com/politicas" target="_blank" class="footer-text ms-4">Privacidad</a>
     </div>
+    <button onclick="activeAlert()">modal</button>
 </footer>
 
 <script>
-    alert('test');
+    function activeAlert() {
+        alert('test');
+    }
 </script>
